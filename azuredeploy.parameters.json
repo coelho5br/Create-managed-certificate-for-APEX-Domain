@@ -6,9 +6,9 @@
             "value": "contoso.com"
         },
         "AppServicePlanName": {
-            "value": "string"
+            "value": "ASP-TEST-CERT"
         },
         "Location": {
-            "value": "string"
+            "value": "West US"
         }
     },

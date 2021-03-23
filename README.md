@@ -14,6 +14,8 @@ This arm deployment will:
 
 1. Create a Managed Certificate (Free).
 
+The operation is expected to take some time.
+
 
 You can also deploy using the powershell:
 
