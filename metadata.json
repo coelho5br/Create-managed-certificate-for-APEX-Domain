@@ -1,0 +1,13 @@
+
+{
+  "$schema": "https://aka.ms/azure-quickstart-templates-metadata-schema#",
+  "type": "QuickStart",
+   "itemDisplayName":"Web App integration with App Services Certificate",
+   "description":"Deploy a Web App certificate from App Services Certificate and use it for creating SSL binding",
+   "summary":"Deploy a Web App certificate from App Services Certificate and use it for creating SSL binding",
+   "githubUsername":"coelho5br",
+   "dateUpdated":"2021-02-10",
+   "environments": [
+     "AzureCloud"
+   ]
+}
