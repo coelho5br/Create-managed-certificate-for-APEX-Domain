@@ -13,3 +13,28 @@ To deploy this template, you need to have the following resources:
 This arm deployment will:
 
 1. Create a Managed Certificate (Free).
+
+
+You can also deploy using the powershell:
+
+````
+#Connect-AzureRmAccount
+
+$subscription = "XXXXX-XXXX-XXX-XXXX-XXXXXXX"
+$resourceGroupName = "MyResourceGroupwheretheASPislocated"
+$appServicePlanName = "ASP-TEST-CERT"
+$subjectName = "contoso.com"
+
+Set-AzureRmContext -SubscriptionId $subscription
+
+$appServicePlan = Get-AzureRmResource `
+    | Where-Object {$_.ResourceGroupName -eq $resourceGroupName } `
+    | Where-Object {$_.Name -eq $appServicePlanName}
+
+New-AzureRMResourceGroupDeployment `
+    -ResourceGroupName $resourceGroupName `
+    -SubjectName $subjectName `
+    -AppServicePlanName $appServicePlanName `
+    -Location $appServicePlan.Location `
+    -TemplateFile "CreateHttpFreeCert.json" 
+````
