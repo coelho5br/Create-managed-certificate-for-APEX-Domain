@@ -39,5 +39,5 @@ New-AzureRMResourceGroupDeployment `
     -SubjectName $subjectName `
     -AppServicePlanName $appServicePlanName `
     -Location $appServicePlan.Location `
-    -TemplateFile "CreateHttpFreeCert.json" 
+    -TemplateFile "azuredeploy.json" 
 ````
