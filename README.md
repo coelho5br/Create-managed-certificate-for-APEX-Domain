@@ -9,6 +9,7 @@ To deploy this template, you need to have the following resources:
 1. The App Service Plan (serverFarm) resource name that the Web App is running.
 2. The domain should already be bound under Web App Custom Domain.
 3. Use the Resource Group where the App Service Plan is located to create the Managed Certificate.
+4. **Make sure you Web App does not have any Network restriction or redirection (such as http to https or to another url).**
 
 
 This arm deployment will:
